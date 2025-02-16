@@ -12,7 +12,8 @@ const greetings = [
  * @returns {string} The randomly generated greeting
  */
 function getRandomGreeting() {
-    return '';
+    const randomIndex = Math.floor(Math.random() * greetings.length);
+    return greetings[randomIndex];
 }
 
 module.exports = {
